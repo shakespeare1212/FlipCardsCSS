@@ -1,0 +1,112 @@
+#page-title 
+{
+   text-align: center;
+}
+table {
+  border="0";
+  cellspacing="0";
+  cellpadding="0";
+}
+.LeftNumberCol
+{
+	width = 80px;
+}
+.maincontainer
+{
+	position: relative;
+	width: 250px;
+	height: 85px;
+}
+.card
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.3s ease;
+	border-radius: 10% 10%;
+}
+
+.card-front
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	backface-visibility: hidden;
+	color: #333;
+}
+
+.card-back
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	text-align: center;
+	ccolor: #333;
+	transform: rotateY(180deg);
+}	
+
+.card:hover
+{
+    transform: rotateY(180deg);	
+	width: 100%;
+	height: 100%;
+}
+
+.card-front.onesFront
+{
+	background: papayawhip;
+	background-image: linear-gradient(darkorange, papayawhip);
+	border-radius: 10% 10%;
+}
+.card-back.onesBack
+{
+	background: Peru;
+	background-image: linear-gradient(lime, peru);
+	border-radius: 10% 10%;
+}
+
+.card-front.twosFront
+{
+	background: pink;
+	background-image: linear-gradient(red, pink);
+	
+	border-radius: 10% 10%;
+}
+.card-back.twosBack
+{
+	background: violet;
+	background-image: linear-gradient(yellow, violet);
+	border-radius: 10% 10%;
+}
+
+.card-front.threesFront
+{
+	background: lightskyblue;
+    background-image: linear-gradient(lightskyblue, violet);
+	border-radius: 10% 10%;
+}
+.card-back.threesBack
+{
+	background: fuchsia;
+	background-image: linear-gradient(lemonchiffon, fuchsia);
+	border-radius: 10% 10%;
+}
+#HigherNumsLink{
+   display: inline-block;
+   background-color: lightskyblue;
+   background-image: linear-gradient(lightskyblue, violet);
+   border-radius: 10% 50% 50% 10%;
+}
+
+#LowerNumsLink {
+  display: inline-block;
+   background-color: pink;
+   background-image: linear-gradient(pink, coral);
+   border-radius: 50% 10% 10% 50%;	
+}
+
+
+
